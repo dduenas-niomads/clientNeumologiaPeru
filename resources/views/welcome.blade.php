@@ -59,7 +59,7 @@
       </div>
     </nav>
     <!-- Header-->
-    <header class="intro" data-background="img/main.png">
+    <header class="intro">
       <div class="overlay"></div>
       <div class="intro-body">
         <div class="container text-center">
