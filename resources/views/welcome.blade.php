@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="#">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Plataforma comercial internacional
+    <title>Neumología Perú
     </title>
     <!-- Bootstrap Core CSS-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -105,7 +105,7 @@
                   <div class="row">
                       <div class="col-md-6">
                           <div class="menu-widget">
-                              <h4>Plataforma Comercial Internacional</h4>
+                              <h4>Neumología Perú</h4>
                               <ul>
                                   <li><a href="#" title="">Inicio</a></li>
                                   <li><a href="#terms" title="">Metodología</a></li>
@@ -137,7 +137,7 @@
       </div>
     </div> -->
     <!-- Slider-->
-    <section class="section-small" id="about">
+    <!-- <section class="section-small" id="about">
       <div class="container offcet-art-main">
         <div class="row">
           <div class="col-lg-10 col-lg-offset-2 text-center">
@@ -167,9 +167,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Slider-->
-    <section class="section-small" id="terms">
+    <!-- <section class="section-small" id="terms">
       <div class="container offcet-art-main">
         <div class="row">
           <div class="col-lg-10 text-center"><img class="img-responsive center-block" src="img/plarcoint/7.jpg" alt="">
@@ -193,9 +193,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!--Promo Section-->
-    <section class="showcase section-small" id="partners">
+    <!-- <section class="showcase section-small" id="partners">
       <div class="container text-center">
         <div class="row v-center">
           <div class="col-lg-12">
@@ -218,12 +218,6 @@
                 </p>
               </li>
             </ol>
-            <!-- <p style="text-align: justify;" class="no-pad-btm"><strong>A.</strong> Realizamos una prospección de sus productos en los mercados donde
-              pretendemos introducirnos para conocer la competencia, sus
-              calidades y precios.<br><br>
-              <strong>B.</strong> Disponemos de una organización comercial en varios países de Europa,
-              Sudamérica, USA, China, etc…, países a donde dirigimos los productos de las
-              empresas con las que cerramos acuerdos comerciales.</p> -->
           </div>
           <div class="col-lg-6"><img class="img-responsive center-block wow zoomIn" src="img/plarcoint/5.jpg" alt="" data-wow-duration="3s"></div>
           <div class="col-lg-3" style="float:right">
@@ -232,9 +226,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Prtners 1-->
-    <section class="no-pad">
+    <!-- <section class="no-pad">
       <div class="container text-center">
         <div class="row wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
           <div class="col-md-12">
@@ -259,9 +253,9 @@
           </div><br>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Gallery-->
-    <section class="section-small" id="gallery">
+    <!-- <section class="section-small" id="gallery">
       <div class="container text-center">
         <h3>La <strong>“Plataforma C. I.”</strong>, a través de su equipo técnico comercial, está
           llevando a cabo de manera exhaustiva, las relaciones comerciales tanto de exportación como
@@ -302,7 +296,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Contact Section-->
     <!-- <section class="section-small" id="contact2">
       <div class="container text-center">
@@ -321,7 +315,7 @@
       </div>
     </section> -->
     <!-- footer - alignment center-->
-    <section class="section-small bg-gray footer">
+    <!-- <section class="section-small bg-gray footer">
       <div class="container text-center">
         <div class="row">
           <h2>CONCERTAR ENTREVISTA PERSONAL</h2>
@@ -352,15 +346,15 @@
           </div>
         </div>
       </div>
-    </section><a class="topbtn page-scroll" href="#page-top"></a>
-    <div class="bg-gray" style="padding-left: 7%;padding-bottom: 2%;">
+    </section><a class="topbtn page-scroll" href="#page-top"></a> -->
+    <!-- <div class="bg-gray" style="padding-left: 7%;padding-bottom: 2%;">
       <a href="#">
         <i class="fab fa-facebook-f la-fw fa-lg"></i>
       </a>
       <a href="https://api.whatsapp.com/send?phone=34608774448&text=Hola,+quisiera+comunicarme+con+un+asesor&app_absent=0" style="padding-left: 1%;">
         <i class="fab fa-whatsapp la-fw fa-lg"></i>
       </a>
-    </div>
+    </div> -->
     <!-- jQuery-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap Core JavaScript-->

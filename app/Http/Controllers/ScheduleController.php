@@ -13,9 +13,15 @@ class ScheduleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index()
     {
         $schedules = Schedule::all();
+        $schedules = $schedules->wherenull('deleted_at');
         return view('schedules.index', compact('schedules'));
     }
 
@@ -40,7 +46,8 @@ class ScheduleController extends Controller
         $request->validate([
             'date'=>'required',
             'hour'=>'required',
-            'duration'=>'required'
+            'duration'=>'nullable',
+            'capacity'=>'nullable'
         ]);
         $schedule = new Schedule([
             'date' => $request->get('date'),
@@ -49,7 +56,7 @@ class ScheduleController extends Controller
             'capacity' => $request->get('capacity')
         ]);
         $schedule->save();
-        return redirect('/schedule')->with('success', 'schedule saved!');
+        return redirect('/schedules')->with('success', 'Horario creado!');
     }
 
     /**
@@ -71,7 +78,8 @@ class ScheduleController extends Controller
      */
     public function edit($id)
     {
-        //
+        $schedule = Schedule::find($id);
+        return view('schedules.edit', compact('schedule'));        
     }
 
     /**
@@ -83,7 +91,19 @@ class ScheduleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'date'=>'required',
+            'hour'=>'required',
+            'duration'=>'nullable',
+            'capacity'=>'nullable'
+        ]);
+        $schedule = Schedule::find($id);
+        $schedule->date =  $request->get('date');
+        $schedule->hour =  $request->get('hour');
+        $schedule->duration =  $request->get('duration');
+        $schedule->capacity =  $request->get('capacity');
+        $schedule->save();
+        return redirect('/schedules')->with('success', 'Horario actualizado!');
     }
 
     /**
@@ -94,6 +114,9 @@ class ScheduleController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $schedule = Schedule::find($id);
+        $schedule->deleted_at = date("Y-m-d H:i:s");
+        $schedule->save();
+        return redirect('/schedules')->with('success', 'Horario eliminado!');
     }
 }
