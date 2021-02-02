@@ -35,10 +35,10 @@
             <li class="hidden"><a href="#page-top"></a></li>
             <li><a href="#">Inicio <span class="caret"></span></a>
             </li>
-            <li><a href="#terms">METODOLOGÍA <span class="caret"></span></a>
+            <!-- <li><a href="#terms">METODOLOGÍA <span class="caret"></span></a>
             </li>
             <li><a href="#partners">Socios <span class="caret"></span></a>
-            </li>
+            </li> -->
             <!-- <li><a href="privacy-policy.html">Política de privacidad <span class="caret"></span></a>
             </li> -->
           </ul>
