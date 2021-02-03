@@ -35,10 +35,17 @@
             <li class="hidden"><a href="#page-top"></a></li>
             <li><a href="#">Inicio <span class="caret"></span></a>
             </li>
+<<<<<<< HEAD
             <li><a href="#about">Nosotros <span class="caret"></span></a>
             </li>
             <li><a href="#services">Servicios <span class="caret"></span></a>
             </li>
+=======
+            <!-- <li><a href="#terms">METODOLOGÍA <span class="caret"></span></a>
+            </li>
+            <li><a href="#partners">Socios <span class="caret"></span></a>
+            </li> -->
+>>>>>>> 0b36c6daebc761f4accd7bcc2baaba62ed0dfb29
             <!-- <li><a href="privacy-policy.html">Política de privacidad <span class="caret"></span></a>
             </li> -->
           </ul>
