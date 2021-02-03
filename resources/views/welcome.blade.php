@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="img/favicon.png">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Neumología Perú
@@ -35,9 +35,9 @@
             <li class="hidden"><a href="#page-top"></a></li>
             <li><a href="#">Inicio <span class="caret"></span></a>
             </li>
-            <li><a href="#terms">METODOLOGÍA <span class="caret"></span></a>
+            <li><a href="#about">Nosotros <span class="caret"></span></a>
             </li>
-            <li><a href="#partners">Socios <span class="caret"></span></a>
+            <li><a href="#services">Servicios <span class="caret"></span></a>
             </li>
             <!-- <li><a href="privacy-policy.html">Política de privacidad <span class="caret"></span></a>
             </li> -->
@@ -65,17 +65,10 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-12">
-              <img class="img_logo" src="img/logo.png">
+              <img class="img_logo" src="img/logo.jpg">
             </div>
           </div>
         </div>
-
-        <!-- Video -->
-        <!-- <div class="video-container">
-          <video poster="img/main-search-video-poster.jpg" loop autoplay muted>
-            <source src="img/main-search-video.mp4" type="video/mp4">
-          </video>
-        </div> -->
       </div>
       <!-- <div class="main-search-container">
         <div class="main-search-inner">
@@ -87,11 +80,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="video-container">
-          <video poster="img/main-search-video-poster.jpg" loop autoplay muted>
-            <source src="img/main-search-video.mp4" type="video/mp4">
-          </video>
         </div>
       </div> -->
     </header>
@@ -108,9 +96,8 @@
                               <h4>Neumología Perú</h4>
                               <ul>
                                   <li><a href="#" title="">Inicio</a></li>
-                                  <li><a href="#terms" title="">Metodología</a></li>
-                                  <li><a href="#partners" title="">Socios</a></li>
-                                  <li><a href="#about" title="">Nuestra Plataforma</a></li>
+                                  <li><a href="#about" title="">Nosotros</a></li>
+                                  <li><a href="#services" title="">Servicios</a></li>
                               </ul>
                           </div><!--menu-widget end-->
                       </div>
@@ -137,64 +124,74 @@
       </div>
     </div> -->
     <!-- Slider-->
-    <!-- <section class="section-small" id="about">
+    <section class="section-small" id="about">
       <div class="container offcet-art-main">
         <div class="row">
           <div class="col-lg-10 col-lg-offset-2 text-center">
             <div class="carousel slide carousel-fade" id="carousel-light4">
-              <ol class="carousel-indicators">
-                <li class="active" data-target="#carousel-light4" data-slide-to="0"></li>
-                <li data-target="#carousel-light4" data-slide-to="1"></li>
-              </ol>
               <div class="carousel-inner" role="listbox">
-                <div class="item active"><img class="img-responsive center-block" src="img/plarcoint/3.jpg" alt=""></div>
-                <div class="item"><img class="img-responsive center-block" src="img/plarcoint/4.jpg" alt=""></div>
+                <div class="item active"><img class="img-responsive center-block" src="img/plarcoint/neumopediatria.jpg" alt=""></div>
               </div>
             </div>
             <div class="offcet-art">
-              <h3>Plataforma Comercial Internacional</h3>
-              <p style="text-align: justify;">Conscientes y conocedores de la situación que atraviesa el sector empresarial
-                en España, entre otros por el COVID 19, hemos creado una <strong>“Plataforma
-                Comercial Internacional”,</strong> con el propósito de cerrar acuerdos comerciales con
-                empresas españolas, para ayudarles a aumentar sus ventas en mercados donde
-                no estén vendiendo sus productos actualmente.<br><br>
-                Asimismo, podremos tramitar operaciones para obtener la financiación necesaria
-                para (<u>capital circulante, compra de maquinaria, modernizar las instalaciones</u>, etc…).<br><br>
-                Una vez estudiada la empresa y conocer las pretensiones de sus directivos, nuestro
-                Know-how Empresarial, Financiero, Jurídico y Comercial, aportará el apoyo necesario
-                para que en cada momento se sienta acompañado y asesorado.</p><a class="btn btn-sm btn-gray" href="mailto:contacto@plarcoint.es?subject=Concertar entrevista personal">Contactar</a>
+              <h3>¿Quiénes somos?</h3>
+              <p style="text-align: justify;">Neumología y Neumología Pediátrica, es una sociedad de médicos 
+              especialistas en Neumología y Cirugía de Tórax y Cardiovascular comprometidos con nuestros 
+              pacientes, brindamos atención personalizada, tenemos costos muy accesibles, y estamos en 
+              constante crecimiento personal y profesional para brindarles la mejor atención médica privada.<br><br>
+
+              Neumología y Neumología Pediátrica brinda atenciones Médicas a niños desde etapa de lactancia 
+              hasta etapa de adultos, y adultos mayores (etapa geriátrica).</p>
+              <a class="btn btn-sm btn-gray" href="mailto:vanessaloayzasalazar@gmail.com?subject=Concertar entrevista personal">Contactar</a>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- Slider-->
-    <!-- <section class="section-small" id="terms">
+    <section class="section-small" id="services">
       <div class="container offcet-art-main">
         <div class="row">
-          <div class="col-lg-10 text-center"><img class="img-responsive center-block" src="img/plarcoint/7.jpg" alt="">
+          <div class="col-lg-10 text-center"><img class="img-responsive center-block" src="img/plarcoint/neumology.jpg" alt="">
             <div class="offcet-art-right">
-              <h3>El Plan Comercial que aplica nuestra <strong>“Plataforma C. I.”</strong> a sus clientes son los siguientes:</h3>
+              <h3>Sobre nuestros servicios:</h3>
               <ol>
                 <li style="font-weight:bold;">
-                  <p style="text-align: justify;font-weight:normal;">Representar a nuestros clientes (empresas), ayudándoles a vender sus
-                    productos en distintos países a cambio de una comisión pactada.</p>
+                  <p style="text-align: justify;font-weight:normal;">El Servicio de Neumología brinda atenciones médicas en el diagnóstico y
+                tratamiento de las enfermedades respiratorias.</p>
                 </li>
                 <li style="font-weight:bold;">
-                  <p style="text-align: justify;font-weight:normal;">Compradores directos por parte de nuestra <strong>“Plataforma C. I.”</strong> y sus inversores
-                    para comercializar sus fabricados.</p>
+                  <p style="text-align: justify;font-weight:normal;">Atención a pacientes desde la etapa de lactantes hasta etapa de adultos mayores.</p>
                 </li>
                 <li style="font-weight:bold;">
-                  <p style="text-align: justify;font-weight:normal;">Aportación de capital para realizar operaciones puntuales (compras de materias primas, importaciones, 
-                    exportaciones, etc…).</p><a class="btn btn-sm btn-gray" href="mailto:contacto@plarcoint.es?subject=Concertar entrevista personal">Contactar</a>
+                  <p style="text-align: justify;font-weight:normal;">Actualmente estamos manejando las secuelas que ha dejado la COVID-19.</p>
+                </li>
+                <li style="font-weight:bold;">
+                  <p style="text-align: justify;font-weight:normal;">Se han reiniciado las pruebas de función pulmonar (espirometrías).</p><a class="btn btn-sm btn-gray" href="mailto:contacto@plarcoint.es?subject=Concertar entrevista personal">Contactar</a>
                 </li>
               </ol>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!--Promo Section-->
+    <!-- <section class="section-small" id="profile">
+      <div class="container offcet-art-main">
+        <div class="row">
+          <div class="col-lg-6 text-center">
+          <h3>Perfil Profesional</h3>
+              <p style="text-align: center;">Vanessa lissette loayza salazar<br>
+              Especialidades: Neurología<br>
+              CMP:56053<br>
+              RNE 32419
+            </p>
+              <a class="btn btn-sm btn-gray" href="mailto:vanessaloayzasalazar@gmail.com?subject=Concertar entrevista personal">Contactar</a>
+          </div>
+          <div class="col-lg-6"><img class="img-responsive center-block wow zoomIn" src="img/plarcoint/vanessa.jpg" alt="" data-wow-duration="3s" width="40%"></div>
+        </div>
+      </div>
+    </section> -->
     <!-- <section class="showcase section-small" id="partners">
       <div class="container text-center">
         <div class="row v-center">
@@ -255,33 +252,31 @@
       </div>
     </section> -->
     <!-- Gallery-->
-    <!-- <section class="section-small" id="gallery">
+    <section class="section-small" id="gallery">
       <div class="container text-center">
-        <h3>La <strong>“Plataforma C. I.”</strong>, a través de su equipo técnico comercial, está
-          llevando a cabo de manera exhaustiva, las relaciones comerciales tanto de exportación como
-          de importación con firmas de otros países.</h3>
+        <h3>CONOZCA NUESTROS SERVICIOS Y PROCEDIMIENTOS</h3>
         <div class="row">
           <div class="col-sm-6 no-pad">
-            <div class="portfolio-item"><a class="swipebox" href="img/plarcoint/pexels/1.jpg" title="Contacto directo"><img src="img/plarcoint/pexels/1.jpg" alt="">
+            <div class="portfolio-item"><a class="swipebox" href="img/plarcoint/pexels/1.jpg" title="NEUMOLOGIA"><img src="img/plarcoint/pexels/1.jpg" alt="">
               <div class="portfolio-overlay">
                 <div class="caption">
-                  <h3>Contacto directo</h3><span>Utilice nuestra plataforma para incrementar su red de contactos</span>
+                  <h3>NEUMOLOGIA</h3><span>Diagnostico y Manejo de Fibrosis Pulmonar, Diagnostico y manejo de Asma, Manejo de Secuelas COVID-19, Diagnostico de Tuberculosis Pulmonar</span>
                 </div>
               </div></a>
             </div>
-            <div class="portfolio-item"><a class="swipebox" href="img/plarcoint/pexels/4.jpg" title="Datos certificados"><img src="img/plarcoint/pexels/4.jpg" alt="">
+            <div class="portfolio-item"><a class="swipebox" href="img/plarcoint/pexels/4.jpg" title="NEUMOLOGIA PEDIATRICA"><img src="img/plarcoint/pexels/4.jpg" alt="">
               <div class="portfolio-overlay">
                 <div class="caption">
-                  <h3>Datos certificados</h3><span>Fuentes de información internacionales de prestigio</span>
+                  <h3>NEUMOLOGIA PEDIATRICA</h3><span>Especialidad Medica que se encarga del Diagnostico y Tratamiento de las Enfermedades Respiratorias en niños.</span>
                 </div>
               </div></a>
             </div>
           </div>
           <div class="col-sm-6 no-pad">
-            <div class="portfolio-item"><a class="swipebox" href="img/plarcoint/pexels/2.jpg" title="Cartera de clientes"><img src="img/plarcoint/pexels/2.jpg" alt="">
+            <div class="portfolio-item"><a class="swipebox" href="img/plarcoint/pexels/2.jpg" title="CIRUGIA DE TORAX Y CARDIOVASCULAR"><img src="img/plarcoint/pexels/2.jpg" alt="">
               <div class="portfolio-overlay">
                 <div class="caption">
-                  <h3>Cartera de clientes</h3><span>Manejo de perfiles de cliente y exposición a público objetivo</span>
+                  <h3>CIRUGIA DE TORAX Y CARDIOVASCULAR</h3><span>Especialidad Medica que se encarga del tratamiento quirúrgico de las enfermedades que aquejan al tórax y al sistema cardiovascular.</span>
                 </div>
               </div></a>
             </div>
@@ -296,65 +291,46 @@
           </div>
         </div>
       </div>
-    </section> -->
-    <!-- Contact Section-->
-    <!-- <section class="section-small" id="contact2">
-      <div class="container text-center">
-        <div class="row">
-          <h2>CONCERTAR ENTREVISTA PERSONAL</h2>
-          <div class="col-md-4">
-            <h5><i class="ion-ios-telephone-outline icon-big"></i><a href="tel:+34915309643">+34 915 309 643</a> <br> <a href="tel:+34608774448">+34 608 774 448</a></h5>
-          </div>
-          <div class="col-md-4">
-            <h5><i class="ion-ios-location-outline icon-big"></i><a href="https://goo.gl/maps/gdC6frDUsbp3tixY6" target="_blank">Alcalde Sainz de Baranda, 55 <br> 28009 Madrid</h5>
-          </div>
-          <div class="col-md-4">
-            <h5><i class="ion-ios-email-outline icon-big"></i><a href="mailto:contacto@plarcoint.es?subject=Concertar entrevista personal">contacto@plarcoint.es</h5>
-          </div>
-        </div>
-      </div>
-    </section> -->
+    </section>
     <!-- footer - alignment center-->
-    <!-- <section class="section-small bg-gray footer">
+    <section class="section-small bg-gray footer">
       <div class="container text-center">
         <div class="row">
-          <h2>CONCERTAR ENTREVISTA PERSONAL</h2>
-          <div class="col-md-3">
-            <h5><i class="ion-ios-telephone-outline icon-big"></i><a href="tel:+34915309643">+34 915 309 643</a> <br> <a href="tel:+34608774448">+34 608 774 448</a></h5>
-          </div>
-          <div class="col-md-3">
-            <h5><a href="https://goo.gl/maps/DMoJVu5EBubS7n5s6" target="_blank">
-                  <i class="ion-ios-location-outline icon-big"></i>
-                  P° de las Delicias, 30 <br> 28045 Madrid
-                </a>
-            </h5>
-          </div>
-          <div class="col-md-3">
+          <h2>CONTACTO</h2>
+          <div class="col-md-4">
             <h5>
-              <a href="mailto:info@plarcoint.es?subject=Concertar entrevista personal">
-                <i class="ion-ios-email-outline icon-big"></i>info@plarcoint.es
+              <a href="tel:+51964074943">
+                <i class="ion-ios-telephone-outline icon-big"></i>
+                  +51 964 074 943
               </a>
             </h5>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <h5>
-              <a href="privacy-policy.html">
-                <i class="ion-ios-eye-outline icon-big"></i>
-                Políticas de privacidad
+              <a href="https://goo.gl/maps/8wgSmyzTPZzvrZbt8" target="_blank">
+                <i class="ion-ios-location-outline icon-big"></i>
+                  Jirón Guillermo Peratta 394 Of. 107 <br> Urb Liguria - Santiago de Surco
+              </a>
+            </h5>
+          </div>
+          <div class="col-md-4">
+            <h5>
+              <a href="mailto:vanessaloayzasalazar@gmail.com?subject=Concertar entrevista personal">
+                <i class="ion-ios-email-outline icon-big"></i>vanessaloayzasalazar@gmail.com
               </a>
             </h5>
           </div>
         </div>
       </div>
-    </section><a class="topbtn page-scroll" href="#page-top"></a> -->
-    <!-- <div class="bg-gray" style="padding-left: 7%;padding-bottom: 2%;">
-      <a href="#">
+    </section><a class="topbtn page-scroll" href="#page-top"></a>
+    <div class="bg-gray" style="padding-left: 7%;padding-bottom: 2%;">
+      <a href="https://www.facebook.com/neumologavanessa/" target="_blank">
         <i class="fab fa-facebook-f la-fw fa-lg"></i>
       </a>
-      <a href="https://api.whatsapp.com/send?phone=34608774448&text=Hola,+quisiera+comunicarme+con+un+asesor&app_absent=0" style="padding-left: 1%;">
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=51964074943&text=Hola,+quisiera+comunicarme+con+un+asesor&app_absent=0" style="padding-left: 1%;">
         <i class="fab fa-whatsapp la-fw fa-lg"></i>
       </a>
-    </div> -->
+    </div>
     <!-- jQuery-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap Core JavaScript-->
