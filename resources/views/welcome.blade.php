@@ -73,7 +73,22 @@
 				<div class="header-widget">
           @if (Route::has('login'))
             @auth
-                <a href="{{ url('/home') }}" class="sign-in"><i class="sl sl-icon-login"></i> Dashboard</a>
+            <div class="dropdown">
+              <button class="dropbtn">{{ Auth::user()->name }}
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="{{ url('/home') }}" class="sign-in">Dashboard</a>
+                <a class="sign-in" href="{{ route('logout') }}"
+                      onclick="event.preventDefault();
+                      document.getElementById('logout-form').submit();">
+                      {{ __('Logout') }}
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                      @csrf
+                  </form>
+                </a>
+              </div>
+            </div>
             @else
             <a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"><i class="sl sl-icon-login"></i> Ingresar</a>
             @endauth
