@@ -9,8 +9,8 @@
 
 <!-- CSS
 ================================================== -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/main-color.css" id="colors">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/main-color.css') }}" id="colors">
 <link rel="icon" type="image/png" href="images/neumo/logo.png">
 
 </head>
@@ -71,8 +71,14 @@
 			<!-- Right Side Content / End -->
 			<div class="right-side">
 				<div class="header-widget">
-					<a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"><i class="sl sl-icon-login"></i> Ingresar</a>
-					<a href="#" class="button border with-icon">Reservar cita <i class="sl sl-icon-plus"></i></a>
+          @if (Route::has('login'))
+            @auth
+                <a href="{{ url('/home') }}" class="sign-in"><i class="sl sl-icon-login"></i> Dashboard</a>
+            @else
+            <a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"><i class="sl sl-icon-login"></i> Ingresar</a>
+            @endauth
+          @endif
+          <a href="#" class="button border with-icon">Reservar cita <i class="sl sl-icon-plus"></i></a>
 				</div>
 			</div>
 			<!-- Right Side Content / End -->
@@ -96,27 +102,40 @@
 
 						<!-- Login -->
 						<div class="tab-content" id="tab1" style="display: none;">
-							<form method="post" class="login">
+              <form method="POST" action="{{ route('login') }}">
+              @csrf
 
-								<p class="form-row form-row-wide">
-									<label for="username">Correo electrónico:
+								<div class="form-row form-row-wide">
+									<label for="email">{{ __('E-Mail Address') }}
 										<i class="im im-icon-Male"></i>
-										<input type="text" class="input-text" name="username" id="username" value="" />
-									</label>
-								</p>
+										<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                    @error('email')
+                      <span class="invalid-feedback" role="alert">
+                          <strong>{{ $message }}</strong>
+                      </span>
+                    @enderror
+                  </label>
+                </div>
 
-								<p class="form-row form-row-wide">
-									<label for="password">Contraseña:
+								<div class="form-row form-row-wide">
+									<label for="password">{{ __('Password') }}
 										<i class="im im-icon-Lock-2"></i>
-										<input class="input-text" type="password" name="password" id="password"/>
-									</label>
+										<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                    @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                  </label>
 									<span class="lost_password">
 										<a href="#" >¿Olvidaste tu contraseña?</a>
 									</span>
-								</p>
+                </div>
 
 								<div class="form-row">
-									<input type="submit" class="button border margin-top-5" name="login" value="Iniciar sesión" />
+                <button type="submit" name="login" class="button border margin-top-5">
+                    {{ __('Login') }}
+                </button>  
 								</div>
 								
 							</form>
@@ -125,37 +144,55 @@
 						<!-- Register -->
 						<div class="tab-content" id="tab2" style="display: none;">
 
-							<form method="post" class="register">
+            <form method="POST" action="{{ route('register') }}">
+                @csrf
 								
-							<p class="form-row form-row-wide">
-								<label for="username2">Nombre:
+							<div class="form-row form-row-wide">
+								<label for="name1">{{ __('Name') }}
 									<i class="im im-icon-Male"></i>
-									<input type="text" class="input-text" name="username" id="username2" value="" />
-								</label>
-							</p>
+									<input id="name1" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                  @error('name')
+                      <span class="invalid-feedback" role="alert">
+                          <strong>{{ $message }}</strong>
+                      </span>
+                  @enderror
+                </label>
+              </div>
 								
-							<p class="form-row form-row-wide">
-								<label for="email2">Correo electrónico:
+							<div class="form-row form-row-wide">
+								<label for="email1">{{ __('E-Mail Address') }}
 									<i class="im im-icon-Mail"></i>
-									<input type="text" class="input-text" name="email" id="email2" value="" />
-								</label>
-							</p>
+									<input id="email1" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                  @error('email')
+                      <span class="invalid-feedback" role="alert">
+                          <strong>{{ $message }}</strong>
+                      </span>
+                  @enderror
+                </label>
+              </div>
 
-							<p class="form-row form-row-wide">
-								<label for="password1">Contraseña:
+							<div class="form-row form-row-wide">
+								<label for="password1">{{ __('Password') }}
 									<i class="im im-icon-Lock-2"></i>
-									<input class="input-text" type="password" name="password1" id="password1"/>
-								</label>
-							</p>
+                  <input id="password1" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
-							<p class="form-row form-row-wide">
-								<label for="password2">Repetir contraseña:
+                  @error('password')
+                      <span class="invalid-feedback" role="alert">
+                          <strong>{{ $message }}</strong>
+                      </span>
+                  @enderror
+								</label>
+              </div>
+
+							<div class="form-row form-row-wide">
+								<label for="password-confirm">{{ __('Confirm Password') }}
 									<i class="im im-icon-Lock-2"></i>
-									<input class="input-text" type="password" name="password2" id="password2"/>
+									<input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
 								</label>
-							</p>
-
-							<input type="submit" class="button border fw margin-top-10" name="register" value="Registrarme" />
+							</div>
+              <button type="submit" class="button border fw margin-top-10" name="register">
+                  {{ __('Register') }}
+              </button>
 	
 							</form>
 						</div>

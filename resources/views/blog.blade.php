@@ -9,8 +9,8 @@
 
 <!-- CSS
 ================================================== -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/main-color.css" id="colors">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/main-color.css') }}" id="colors">
 <link rel="icon" type="image/png" href="images/neumo/logo.png">
 
 </head>
@@ -51,9 +51,9 @@
 				<nav id="navigation" class="style-1">
 					<ul id="responsive">
 
-						<li><a class="current" href="{{ url('/') }}">Inicio</a></li>
+						<li><a href="{{ url('/') }}">Inicio</a></li>
 
-						<li><a href="{{ url('/blog') }}">Blog</a></li>
+						<li><a class="current" href="{{ url('/blog') }}">Blog</a></li>
 
 						<li><a href="{{ url('/listings') }}">Reservas</a></li>
 
@@ -71,7 +71,13 @@
 			<!-- Right Side Content / End -->
 			<div class="right-side">
 				<div class="header-widget">
-					<a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"><i class="sl sl-icon-login"></i> Ingresar</a>
+					@if (Route::has('login'))
+						@auth
+							<a href="{{ url('/home') }}" class="sign-in"><i class="sl sl-icon-login"></i> Dashboard</a>
+						@else
+						<a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"><i class="sl sl-icon-login"></i> Ingresar</a>
+						@endauth
+					@endif
 					<a href="#" class="button border with-icon">Reservar cita <i class="sl sl-icon-plus"></i></a>
 				</div>
 			</div>

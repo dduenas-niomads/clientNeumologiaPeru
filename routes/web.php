@@ -20,8 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::resource('schedules', 'App\Http\Controllers\ScheduleController');
-Route::get('/home', [App\Http\Controllers\StaticController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/blog', [App\Http\Controllers\StaticController::class, 'blog'])->name('blog');
 Route::get('/booking', [App\Http\Controllers\StaticController::class, 'booking'])->name('booking');
 Route::get('/listings', [App\Http\Controllers\StaticController::class, 'listings'])->name('listings');
 Route::get('/contact', [App\Http\Controllers\StaticController::class, 'contact'])->name('contact');
+Route::get('/dashboard', [App\Http\Controllers\Auth\LoginController::class, 'dashboard'])->name('dashboard');

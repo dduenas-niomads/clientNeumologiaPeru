@@ -171,7 +171,7 @@
 					
 					<!-- User Menu -->
 					<div class="user-menu">
-						<div class="user-name"><span><img src="images/dashboard-avatar.jpg" alt=""></span>My Account</div>
+						<div class="user-name"><span><img src="images/dashboard-avatar.jpg" alt=""></span>Hi, Tom!</div>
 						<ul>
 							<li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
 							<li><a href="dashboard-messages.html"><i class="sl sl-icon-envelope-open"></i> Messages</a></li>
@@ -203,14 +203,14 @@
 
 	<!-- Responsive Navigation Trigger -->
 	<a href="#" class="dashboard-responsive-nav-trigger"><i class="fa fa-reorder"></i> Dashboard Navigation</a>
-
+	
 	<div class="dashboard-nav">
 		<div class="dashboard-nav-inner">
 
 			<ul data-submenu-title="Main">
-				<li class="active"><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
+				<li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
 				<li><a href="dashboard-messages.html"><i class="sl sl-icon-envelope-open"></i> Messages <span class="nav-tag messages">2</span></a></li>
-				<li><a href="dashboard-bookings.html"><i class="fa fa-calendar-check-o"></i> Bookings</a></li>
+				<li class="active"><a href="dashboard-bookings.html"><i class="fa fa-calendar-check-o"></i> Bookings</a></li>
 				<li><a href="dashboard-wallet.html"><i class="sl sl-icon-wallet"></i> Wallet</a></li>
 			</ul>
 			
@@ -231,7 +231,7 @@
 				<li><a href="dashboard-my-profile.html"><i class="sl sl-icon-user"></i> My Profile</a></li>
 				<li><a href="index.html"><i class="sl sl-icon-power"></i> Logout</a></li>
 			</ul>
-			
+
 		</div>
 	</div>
 	<!-- Navigation / End -->
@@ -245,165 +245,183 @@
 		<div id="titlebar">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>Howdy, Tom!</h2>
+					<h2>Bookings</h2>
 					<!-- Breadcrumbs -->
 					<nav id="breadcrumbs">
 						<ul>
 							<li><a href="#">Home</a></li>
-							<li>Dashboard</li>
+							<li><a href="#">Dashboard</a></li>
+							<li>Bookings</li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</div>
 
-		<!-- Notice -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="notification success closeable margin-bottom-30">
-					<p>Your listing <strong>Hotel Govendor</strong> has been approved!</p>
-					<a class="close" href="#"></a>
-				</div>
-			</div>
-		</div>
-
-		<!-- Content -->
-		<div class="row">
-
-			<!-- Item -->
-			<div class="col-lg-3 col-md-6">
-				<div class="dashboard-stat color-1">
-					<div class="dashboard-stat-content"><h4>6</h4> <span>Active Listings</span></div>
-					<div class="dashboard-stat-icon"><i class="im im-icon-Map2"></i></div>
-				</div>
-			</div>
-
-			<!-- Item -->
-			<div class="col-lg-3 col-md-6">
-				<div class="dashboard-stat color-2">
-					<div class="dashboard-stat-content"><h4>726</h4> <span>Total Views</span></div>
-					<div class="dashboard-stat-icon"><i class="im im-icon-Line-Chart"></i></div>
-				</div>
-			</div>
-
-			
-			<!-- Item -->
-			<div class="col-lg-3 col-md-6">
-				<div class="dashboard-stat color-3">
-					<div class="dashboard-stat-content"><h4>95</h4> <span>Total Reviews</span></div>
-					<div class="dashboard-stat-icon"><i class="im im-icon-Add-UserStar"></i></div>
-				</div>
-			</div>
-
-			<!-- Item -->
-			<div class="col-lg-3 col-md-6">
-				<div class="dashboard-stat color-4">
-					<div class="dashboard-stat-content"><h4>126</h4> <span>Times Bookmarked</span></div>
-					<div class="dashboard-stat-icon"><i class="im im-icon-Heart"></i></div>
-				</div>
-			</div>
-		</div>
-
-
 		<div class="row">
 			
-			<!-- Recent Activity -->
-			<div class="col-lg-6 col-md-12">
-				<div class="dashboard-list-box with-icons margin-top-20">
-					<h4>Recent Activities</h4>
+			<!-- Listings -->
+			<div class="col-lg-12 col-md-12">
+				<div class="dashboard-list-box margin-top-0">
+					
+					<!-- Booking Requests Filters  -->
+					<div class="booking-requests-filter">
+
+						<!-- Sort by -->
+						<div class="sort-by">
+							<div class="sort-by-select">
+								<select data-placeholder="Default order" class="chosen-select-no-single">
+									<option>All Listings</option>	
+									<option>Burger House</option>
+									<option>Tom's Restaurant</option>
+									<option>Hotel Govendor</option>
+								</select>
+							</div>
+						</div>
+
+						<!-- Date Range -->
+						<div id="booking-date-range">
+						    <span></span>
+						</div>
+					</div>
+
+					<!-- Reply to review popup -->
+					<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+						<div class="small-dialog-header">
+							<h3>Send Message</h3>
+						</div>
+						<div class="message-reply margin-top-0">
+							<textarea cols="40" rows="3" placeholder="Your Message to Kathy"></textarea>
+							<button class="button">Send</button>
+						</div>
+					</div>
+
+					<h4>Booking Requests</h4>
 					<ul>
-						<li>
-							<i class="list-box-icon sl sl-icon-layers"></i> Your listing <strong><a href="#">Hotel Govendor</a></strong> has been approved!
-							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
-						</li>
 
-						<li>
-							<i class="list-box-icon sl sl-icon-star"></i> Kathy Brown left a review <div class="numerical-rating" data-rating="5.0"></div> on <strong><a href="#">Burger House</a></strong>
-							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
-						</li>
+						<li class="pending-booking">
+							<div class="list-box-listing bookings">
+								<div class="list-box-listing-img"><img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&s=120" alt=""></div>
+								<div class="list-box-listing-content">
+									<div class="inner">
+										<h3>Sunny and Modern Apartment <span class="booking-status pending">Pending</span><span class="booking-status unpaid">Unpaid</span></h3>
 
-						<li>
-							<i class="list-box-icon sl sl-icon-heart"></i> Someone bookmarked your <strong><a href="#">Burger House</a></strong> listing!
-							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
-						</li>
+										<div class="inner-booking-list">
+											<h5>Booking Date:</h5>
+											<ul class="booking-list">
+												<li class="highlighted">20.08.2018 - 24.08.2018</li>
+											</ul>
+										</div>
+													
+										<div class="inner-booking-list">
+											<h5>Booking Details:</h5>
+											<ul class="booking-list">
+												<li class="highlighted">2 Adults</li>
+											</ul>
+										</div>		
+													
+										<div class="inner-booking-list">
+											<h5>Price:</h5>
+											<ul class="booking-list">
+												<li class="highlighted">$147</li>
+											</ul>
+										</div>		
 
-						<li>
-							<i class="list-box-icon sl sl-icon-star"></i> Kathy Brown left a review <div class="numerical-rating" data-rating="3.0"></div> on <strong><a href="#">Airport</a></strong>
-							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
-						</li>
+										<div class="inner-booking-list">
+											<h5>Client:</h5>
+											<ul class="booking-list">
+												<li>John Smith</li>
+												<li>john@example.com</li>
+												<li>123-456-789</li>
+											</ul>
+										</div>
 
-						<li>
-							<i class="list-box-icon sl sl-icon-heart"></i> Someone bookmarked your <strong><a href="#">Burger House</a></strong> listing!
-							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
-						</li>
+										<a href="#small-dialog" class="rate-review popup-with-zoom-anim"><i class="sl sl-icon-envelope-open"></i> Send Message</a>
 
-						<li>
-							<i class="list-box-icon sl sl-icon-star"></i> John Doe left a review <div class="numerical-rating" data-rating="4.0"></div> on <strong><a href="#">Burger House</a></strong>
-							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
-						</li>
-
-						<li>
-							<i class="list-box-icon sl sl-icon-star"></i> Jack Perry left a review <div class="numerical-rating" data-rating="2.5"></div> on <strong><a href="#">Tom's Restaurant</a></strong>
-							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			
-			<!-- Invoices -->
-			<div class="col-lg-6 col-md-12">
-				<div class="dashboard-list-box invoices with-icons margin-top-20">
-					<h4>Invoices</h4>
-					<ul>
-						
-						<li><i class="list-box-icon sl sl-icon-doc"></i>
-							<strong>Professional Plan</strong>
-							<ul>
-								<li class="unpaid">Unpaid</li>
-								<li>Order: #00124</li>
-								<li>Date: 20/07/2019</li>
-							</ul>
+									</div>
+								</div>
+							</div>
 							<div class="buttons-to-right">
-								<a href="dashboard-invoice.html" class="button gray">View Invoice</a>
+								<a href="#" class="button gray reject"><i class="sl sl-icon-close"></i> Reject</a>
+								<a href="#" class="button gray approve"><i class="sl sl-icon-check"></i> Approve</a>
+							</div>
+						</li>
+
+						<li class="approved-booking">
+							<div class="list-box-listing bookings">
+								<div class="list-box-listing-img"><img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&s=120" alt=""></div>
+								<div class="list-box-listing-content">
+									<div class="inner">
+										<h3>Burger House <span class="booking-status">Approved</span></h3>
+
+										<div class="inner-booking-list">
+											<h5>Booking Date:</h5>
+											<ul class="booking-list">
+												<li class="highlighted">10.12.2019 at 12:30 pm - 13:30 pm</li>
+											</ul>
+										</div>
+													
+										<div class="inner-booking-list">
+											<h5>Booking Details:</h5>
+											<ul class="booking-list">
+												<li class="highlighted">2 Adults, 2 Children</li>
+											</ul>
+										</div>		
+
+										<div class="inner-booking-list">
+											<h5>Client:</h5>
+											<ul class="booking-list">
+												<li>Kathy Brown</li>
+												<li>kathy@example.com</li>
+												<li>123-456-789</li>
+											</ul>
+										</div>
+
+										<a href="#small-dialog" class="rate-review popup-with-zoom-anim"><i class="sl sl-icon-envelope-open"></i> Send Message</a>
+
+									</div>
+								</div>
+							</div>
+							<div class="buttons-to-right">
+								<a href="#" class="button gray reject"><i class="sl sl-icon-close"></i> Cancel</a>
+							</div>
+						</li>
+
+						<li class="canceled-booking">
+							<div class="list-box-listing bookings">
+								<div class="list-box-listing-img"><img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&s=120" alt=""></div>
+								<div class="list-box-listing-content">
+									<div class="inner">
+										<h3>Tom's Restaurant <span class="booking-status">Canceled</span></h3>
+
+										<div class="inner-booking-list">
+											<h5>Booking Date:</h5>
+											<ul class="booking-list">
+												<li class="highlighted">21.10.2019 at 9:30 am - 10:30 am</li>
+											</ul>
+										</div>
+													
+										<div class="inner-booking-list">
+											<h5>Booking Details:</h5>
+											<ul class="booking-list">
+												<li class="highlighted">2 Adults</li>
+											</ul>
+										</div>		
+
+										<div class="inner-booking-list">
+											<h5>Client:</h5>
+											<ul class="booking-list">
+												<li>Kathy Brown</li>
+												<li>kathy@example.com</li>
+												<li>123-456-789</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
 							</div>
 						</li>
 						
-						<li><i class="list-box-icon sl sl-icon-doc"></i>
-							<strong>Extended Plan</strong>
-							<ul>
-								<li class="paid">Paid</li>
-								<li>Order: #00108</li>
-								<li>Date: 14/07/2019</li>
-							</ul>
-							<div class="buttons-to-right">
-								<a href="dashboard-invoice.html" class="button gray">View Invoice</a>
-							</div>
-						</li>
-
-						<li><i class="list-box-icon sl sl-icon-doc"></i>
-							<strong>Extended Plan</strong>
-							<ul>
-								<li class="paid">Paid</li>
-								<li>Order: #00097</li>
-								<li>Date: 10/07/2019</li>
-							</ul>
-							<div class="buttons-to-right">
-								<a href="dashboard-invoice.html" class="button gray">View Invoice</a>
-							</div>
-						</li>
-						
-						<li><i class="list-box-icon sl sl-icon-doc"></i>
-							<strong>Basic Plan</strong>
-							<ul>
-								<li class="paid">Paid</li>
-								<li>Order: #00091</li>
-								<li>Date: 30/06/2019</li>
-							</ul>
-							<div class="buttons-to-right">
-								<a href="dashboard-invoice.html" class="button gray">View Invoice</a>
-							</div>
-						</li>
-
 					</ul>
 				</div>
 			</div>
@@ -441,6 +459,51 @@
 <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
 <script type="text/javascript" src="scripts/tooltips.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+
+<!-- Date Range Picker - docs: http://www.daterangepicker.com/ -->
+<script src="scripts/moment.min.js"></script>
+<script src="scripts/daterangepicker.js"></script>
+
+<script>
+$(function() {
+
+    var start = moment().subtract(29, 'days');
+    var end = moment();
+
+    function cb(start, end) {
+        $('#booking-date-range span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+    }
+    cb(start, end);
+    $('#booking-date-range').daterangepicker({
+    	"opens": "left",
+	    "autoUpdateInput": false,
+	    "alwaysShowCalendars": true,
+        startDate: start,
+        endDate: end,
+        ranges: {
+           'Today': [moment(), moment()],
+           'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+           'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+           'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+           'This Month': [moment().startOf('month'), moment().endOf('month')],
+           'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+    }, cb);
+
+    cb(start, end);
+
+});
+
+// Calendar animation and visual settings
+$('#booking-date-range').on('show.daterangepicker', function(ev, picker) {
+	$('.daterangepicker').addClass('calendar-visible calendar-animated bordered-style');
+	$('.daterangepicker').removeClass('calendar-hidden');
+});
+$('#booking-date-range').on('hide.daterangepicker', function(ev, picker) {
+	$('.daterangepicker').removeClass('calendar-visible');
+	$('.daterangepicker').addClass('calendar-hidden');
+});
+</script>
 
 
 </body>
